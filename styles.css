@@ -29,7 +29,7 @@ p {
 
 /* New Styles */
 .bg-cover {
-    background-image: url('https://static.vecteezy.com/system/resources/previews/007/718/309/non_2x/minimalist-dark-gradient-wave-background-simple-design-for-your-website-free-vector.jpg');
+    background-image: url('https://static.vecteezy.com/system/resources/previews/010/820/720/original/white-background-random-minimalist-abstract-illustration-for-logo-card-banner-web-and-printing-vector.jpg');
     background-size: cover;
     background-position: center;
     padding: 100px 0;
@@ -71,4 +71,223 @@ section p.lead {
 
 .text-center {
     text-align: center !important;
+}
+
+/* styles.css */
+
+/* Navbar */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f68e51; /* Color naranja */
+}
+
+.navbar-nav .nav-link {
+    color: #343a40; /* Color de texto principal */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #f68e51; /* Color naranja al pasar el mouse */
+}
+
+.navbar-nav .active .nav-link {
+    color: #f68e51 !important; /* Color naranja para el elemento activo */
+}
+
+.navbar-toggler-icon {
+    background-color: #f68e51; /* Color naranja para el ícono del toggler */
+}
+
+/* Encabezado */
+h1 {
+    color: #343a40; /* Color de texto principal */
+}
+
+/* Texto principal */
+p {
+    color: #343a40; /* Color de texto principal */
+}
+
+/* Enlaces */
+a {
+    color: #f68e51; /* Color naranja para enlaces */
+}
+
+a:hover {
+    color: #dc3545; /* Color naranja más oscuro al pasar el mouse */
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #f68e51; /* Fondo naranja para botones primarios */
+    border-color: #f68e51; /* Borde naranja para botones primarios */
+}
+
+.btn-primary:hover {
+    background-color: #dc3545; /* Fondo naranja más oscuro al pasar el mouse */
+    border-color: #dc3545; /* Borde naranja más oscuro al pasar el mouse */
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al enfocarse */
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: #f68e51; /* Fondo naranja para botones deshabilitados */
+    border-color: #f68e51; /* Borde naranja para botones deshabilitados */
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #dc3545; /* Fondo naranja más oscuro al clic */
+    border-color: #dc3545; /* Borde naranja más oscuro al clic */
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al clic */
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #f68e51; /* Color naranja */
+}
+
+.container {
+    margin-top: 100px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #343a40; /* Color de texto principal */
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #343a40; /* Color de texto principal */
+}
+
+.card {
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #343a40; /* Color de texto principal */
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f68e51; /* Color naranja */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.btn-primary {
+    background-color: #f68e51; /* Fondo naranja para botones primarios */
+    border-color: #f68e51; /* Borde naranja para botones primarios */
+    font-size: 1.2rem;
+    padding: 10px 20px;
+}
+
+.btn-primary:hover {
+    background-color: #dc3545; /* Fondo naranja más oscuro al pasar el mouse */
+    border-color: #dc3545; /* Borde naranja más oscuro al pasar el mouse */
+}
+
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al enfocarse */
+}
+
+.btn-primary.disabled,
+.btn-primary:disabled {
+    background-color: #f68e51; /* Fondo naranja para botones deshabilitados */
+    border-color: #f68e51; /* Borde naranja para botones deshabilitados */
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #dc3545; /* Fondo naranja más oscuro al clic */
+    border-color: #dc3545; /* Borde naranja más oscuro al clic */
+}
+
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al clic */
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.text-white {
+    color: white !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
+}
+
+.py-4 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+
+.mt-5 {
+    margin-top: 3rem !important;
 }
