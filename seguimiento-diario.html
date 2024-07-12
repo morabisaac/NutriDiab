@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento Diario - NutriDiab</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">NutriDiab</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="usuario.html">Página Principal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#como-funciona">Cómo Funciona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#explorar-alimentos">Explorar Alimentos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#dietas">Dietas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactar">Contactar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary" href="registro.html">Registro/Inicio de Sesión</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container my-5">
+        <h1>Seguimiento Diario</h1>
+        <form id="seguimiento-form">
+            <div class="form-group">
+                <label for="fecha">Fecha</label>
+                <input type="date" class="form-control" id="fecha" required>
+            </div>
+            <div class="form-group">
+                <label for="tipo-comida">Tipo de Comida</label>
+                <select class="form-control" id="tipo-comida" required>
+                    <option value="desayuno">Desayuno</option>
+                    <option value="almuerzo">Almuerzo</option>
+                    <option value="cena">Cena</option>
+                    <option value="snack">Snack</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="alimento">Alimento Consumido</label>
+                <input type="text" class="form-control" id="alimento" required>
+            </div>
+            <div class="form-group">
+                <label for="cantidad">Cantidad</label>
+                <input type="text" class="form-control" id="cantidad" required>
+            </div>
+            <button type="submit" class="btn btn-success">Añadir Registro</button>
+        </form>
+        <div class="mt-4">
+            <h2>Resumen del Seguimiento Diario</h2>
+            <div id="resumen-container">
+                <!-- Aquí se mostrarán los registros diarios -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
