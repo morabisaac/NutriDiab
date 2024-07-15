@@ -1,196 +1,260 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Planes de Alimentación - NutriDiab</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f8f9fa;
-        }
-        .navbar-brand {
-            font-weight: bold;
-            font-size: 1.5rem;
-            color: #f68e51; /* Color naranja */
-        }
-        .container {
-            margin-top: 100px;
-        }
-        h1 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-            color: #343a40; /* Color de texto principal */
-        }
-        p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-            color: #343a40; /* Color de texto principal */
-        }
-        .card {
-            margin-bottom: 30px;
-            border: none;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .card-body {
-            padding: 20px;
-        }
-        .card-title {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #343a40; /* Color de texto principal */
-        }
-        .card-subtitle {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: #f68e51; /* Color naranja */
-            margin-bottom: 10px;
-        }
-        .card-text {
-            font-size: 1.1rem;
-            color: #6c757d;
-            margin-bottom: 5px;
-        }
-        .btn-primary {
-            background-color: #f68e51; /* Fondo naranja para botones primarios */
-            border-color: #f68e51; /* Borde naranja para botones primarios */
-            font-size: 1.2rem;
-            padding: 10px 20px;
-        }
-        .btn-primary:hover {
-            background-color: #dc3545; /* Fondo naranja más oscuro al pasar el mouse */
-            border-color: #dc3545; /* Borde naranja más oscuro al pasar el mouse */
-        }
-        .btn-primary:focus,
-        .btn-primary.focus {
-            box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al enfocarse */
-        }
-        .btn-primary.disabled,
-        .btn-primary:disabled {
-            background-color: #f68e51; /* Fondo naranja para botones deshabilitados */
-            border-color: #f68e51; /* Borde naranja para botones deshabilitados */
-        }
-        .btn-primary:not(:disabled):not(.disabled):active,
-        .btn-primary:not(:disabled):not(.disabled).active,
-        .show > .btn-primary.dropdown-toggle {
-            background-color: #dc3545; /* Fondo naranja más oscuro al clic */
-            border-color: #dc3545; /* Borde naranja más oscuro al clic */
-        }
-        .btn-primary:not(:disabled):not(.disabled):active:focus,
-        .btn-primary:not(:disabled):not(.disabled).active:focus,
-        .show > .btn-primary.dropdown-toggle:focus {
-            box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al clic */
-        }
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f8f9fa;
+      }
+      .navbar-brand {
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: #f68e51; /* Color naranja */
+      }
+      .container {
+        margin-top: 100px;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #343a40; /* Color de texto principal */
+      }
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        color: #343a40; /* Color de texto principal */
+      }
+      .card {
+        margin-bottom: 30px;
+        border: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .card-body {
+        padding: 20px;
+      }
+      .card-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #343a40; /* Color de texto principal */
+      }
+      .card-subtitle {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #f68e51; /* Color naranja */
+        margin-bottom: 10px;
+      }
+      .card-text {
+        font-size: 1.1rem;
+        color: #6c757d;
+        margin-bottom: 5px;
+      }
+      .btn-primary {
+        background-color: #f68e51; /* Fondo naranja para botones primarios */
+        border-color: #f68e51; /* Borde naranja para botones primarios */
+        font-size: 1.2rem;
+        padding: 10px 20px;
+      }
+      .btn-primary:hover {
+        background-color: #dc3545; /* Fondo naranja más oscuro al pasar el mouse */
+        border-color: #dc3545; /* Borde naranja más oscuro al pasar el mouse */
+      }
+      .btn-primary:focus,
+      .btn-primary.focus {
+        box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al enfocarse */
+      }
+      .btn-primary.disabled,
+      .btn-primary:disabled {
+        background-color: #f68e51; /* Fondo naranja para botones deshabilitados */
+        border-color: #f68e51; /* Borde naranja para botones deshabilitados */
+      }
+      .btn-primary:not(:disabled):not(.disabled):active,
+      .btn-primary:not(:disabled):not(.disabled).active,
+      .show > .btn-primary.dropdown-toggle {
+        background-color: #dc3545; /* Fondo naranja más oscuro al clic */
+        border-color: #dc3545; /* Borde naranja más oscuro al clic */
+      }
+      .btn-primary:not(:disabled):not(.disabled):active:focus,
+      .btn-primary:not(:disabled):not(.disabled).active:focus,
+      .show > .btn-primary.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(246, 142, 81, 0.5); /* Sombra naranja al clic */
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html">NutriDiab</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon" style="background-color: #f68e51;"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="educacion.html">Cómo Funciona</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="recetas.html">Explorar Alimentos</a>
-                </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="planes-alimentacion.html">Planes de Alimentación</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contacto.html">Contactar</a>
-                </li>
-                <li class="nav-item">
-                    <a class="btn btn-primary" href="registro.html">Registro/Inicio de Sesión</a>
-                </li>
-            </ul>
-        </div>
+      <a class="navbar-brand" href="index.html">NutriDiab</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span
+          class="navbar-toggler-icon"
+          style="background-color: #f68e51"
+        ></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="educacion.html">Cómo Funciona</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="recetas.html">Explorar Alimentos</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="planes-alimentacion.html"
+              >Planes de Alimentación</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacto.html">Contactar</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-primary" href="iniciarsesion.html"
+              >Inicio de Sesión</a
+            >
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Main Content -->
     <div class="container">
-        <header class="bg-cover text-white">
-            <div class="container">
-                <h1 class="mb-4">Planes de Alimentación para Diabetes</h1>
-                <p>Descubre nuestros planes diseñados para ayudarte a manejar tu diabetes de manera efectiva.</p>
-            </div>
-        </header>
-
-        <!-- Plan Diabetes Tipo 1 -->
-        <section>
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Plan Diabetes Tipo 1</h2>
-                    <h3 class="card-subtitle mb-3">Desayuno</h3>
-                    <p class="card-text">Opción 1: Batido de proteínas con frutas y semillas.</p>
-                    <p class="card-text">Opción 2: Tostadas integrales con aguacate y huevo pochado.</p>
-                    <h3 class="card-subtitle mb-3">Almuerzo</h3>
-                    <p class="card-text">Opción 1: Ensalada de quinoa con verduras y pollo a la plancha.</p>
-                    <p class="card-text">Opción 2: Salmón al horno con espárragos y arroz integral.</p>
-                    <h3 class="card-subtitle mb-3">Cena</h3>
-                    <p class="card-text">Opción 1: Pechuga de pollo a la parrilla con brócoli al vapor.</p>
-                    <p class="card-text">Opción 2: Sopa de lentejas con vegetales y ensalada fresca.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Plan Diabetes Tipo 2 -->
-        <section>
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Plan Diabetes Tipo 2</h2>
-                    <h3 class="card-subtitle mb-3">Desayuno</h3>
-                    <p class="card-text">Opción 1: Avena con frutas frescas y nueces.</p>
-                    <p class="card-text">Opción 2: Yogur griego con bayas y granola baja en azúcar.</p>
-                    <h3 class="card-subtitle mb-3">Almuerzo</h3>
-                    <p class="card-text">Opción 1: Pechuga de pollo al curry con vegetales al vapor.</p>
-                    <p class="card-text">Opción 2: Ensalada de espinacas con salmón ahumado y aguacate.</p>
-                    <h3 class="card-subtitle mb-3">Cena</h3>
-                    <p class="card-text">Opción 1: Filete de pescado a la parrilla con espárragos.</p>
-                    <p class="card-text">Opción 2: Tacos de pavo con tortillas integrales y ensalada.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Plan Diabetes Gestacional -->
-        <section>
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Plan Diabetes Gestacional</h2>
-                    <h3 class="card-subtitle mb-3">Desayuno</h3>
-                    <p class="card-text">Opción 1: Tostadas integrales con aguacate y huevo.</p>
-                    <p class="card-text">Opción 2: Batido de frutas con yogur natural.</p>
-                    <h3 class="card-subtitle mb-3">Almuerzo</h3>
-                    <p class="card-text">Opción 1: Ensalada de garbanzos con espinacas y pollo a la plancha.</p>
-                    <p class="card-text">Opción 2: Salmón al horno con quinoa y vegetales.</p>
-                    <h3 class="card-subtitle mb-3">Cena</h3>
-                    <p class="card-text">Opción 1: Pechuga de pollo con puré de calabaza.</p>
-                    <p class="card-text">Opción 2: Estofado de ternera con verduras mixtas.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Más Planes -->
-        <!-- Puedes agregar más tarjetas de planes de alimentación según necesites -->
-
-        <div class="row">
-            <div class="col text-center">
-                <p>Para más detalles sobre nuestros planes de alimentación y cómo pueden ayudarte, <a href="contacto.html" style="color: #f68e51; font-weight: bold;">contáctanos</a>.</p>
-            </div>
+      <header class="bg-cover text-white">
+        <div class="container">
+          <h1 class="mb-4">Planes de Alimentación para Diabetes</h1>
+          <p>
+            Descubre nuestros planes diseñados para ayudarte a manejar tu
+            diabetes de manera efectiva.
+          </p>
         </div>
+      </header>
+
+      <!-- Plan Diabetes Tipo 1 -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Plan Diabetes Tipo 1</h2>
+            <h3 class="card-subtitle mb-3">Desayuno</h3>
+            <p class="card-text">
+              Opción 1: Batido de proteínas con frutas y semillas.
+            </p>
+            <p class="card-text">
+              Opción 2: Tostadas integrales con aguacate y huevo pochado.
+            </p>
+            <h3 class="card-subtitle mb-3">Almuerzo</h3>
+            <p class="card-text">
+              Opción 1: Ensalada de quinoa con verduras y pollo a la plancha.
+            </p>
+            <p class="card-text">
+              Opción 2: Salmón al horno con espárragos y arroz integral.
+            </p>
+            <h3 class="card-subtitle mb-3">Cena</h3>
+            <p class="card-text">
+              Opción 1: Pechuga de pollo a la parrilla con brócoli al vapor.
+            </p>
+            <p class="card-text">
+              Opción 2: Sopa de lentejas con vegetales y ensalada fresca.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan Diabetes Tipo 2 -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Plan Diabetes Tipo 2</h2>
+            <h3 class="card-subtitle mb-3">Desayuno</h3>
+            <p class="card-text">
+              Opción 1: Avena con frutas frescas y nueces.
+            </p>
+            <p class="card-text">
+              Opción 2: Yogur griego con bayas y granola baja en azúcar.
+            </p>
+            <h3 class="card-subtitle mb-3">Almuerzo</h3>
+            <p class="card-text">
+              Opción 1: Pechuga de pollo al curry con vegetales al vapor.
+            </p>
+            <p class="card-text">
+              Opción 2: Ensalada de espinacas con salmón ahumado y aguacate.
+            </p>
+            <h3 class="card-subtitle mb-3">Cena</h3>
+            <p class="card-text">
+              Opción 1: Filete de pescado a la parrilla con espárragos.
+            </p>
+            <p class="card-text">
+              Opción 2: Tacos de pavo con tortillas integrales y ensalada.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Plan Diabetes Gestacional -->
+      <section>
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Plan Diabetes Gestacional</h2>
+            <h3 class="card-subtitle mb-3">Desayuno</h3>
+            <p class="card-text">
+              Opción 1: Tostadas integrales con aguacate y huevo.
+            </p>
+            <p class="card-text">
+              Opción 2: Batido de frutas con yogur natural.
+            </p>
+            <h3 class="card-subtitle mb-3">Almuerzo</h3>
+            <p class="card-text">
+              Opción 1: Ensalada de garbanzos con espinacas y pollo a la
+              plancha.
+            </p>
+            <p class="card-text">
+              Opción 2: Salmón al horno con quinoa y vegetales.
+            </p>
+            <h3 class="card-subtitle mb-3">Cena</h3>
+            <p class="card-text">
+              Opción 1: Pechuga de pollo con puré de calabaza.
+            </p>
+            <p class="card-text">
+              Opción 2: Estofado de ternera con verduras mixtas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Más Planes -->
+      <!-- Puedes agregar más tarjetas de planes de alimentación según necesites -->
+
+      <div class="row">
+        <div class="col text-center">
+          <p>
+            Para más detalles sobre nuestros planes de alimentación y cómo
+            pueden ayudarte,
+            <a href="contacto.html" style="color: #f68e51; font-weight: bold"
+              >contáctanos</a
+            >.
+          </p>
+        </div>
+      </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
